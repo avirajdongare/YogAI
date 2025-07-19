@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pose Detection</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #fdfdfd;
+            font-family: Arial, sans-serif;
+        }
+
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            margin-right: 30px;
+        }
+
+        .centered img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+            border: 3px solid #333;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .scroll-container {
+            background-color: #ffffff;
+            overflow-y: auto;
+            max-height: 90vh;
+            width: 220px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-left: 2px solid #ccc;
+        }
+
+        .scroll-container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .scroll-container::-webkit-scrollbar-thumb {
+            background-color: #818181;
+            border-radius: 5px;
+        }
+
+        .scroll-container::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="centered">
+        <img src="{{ url_for('video_feed1') }}" alt="Pose Detection" style="width: 1000px; height: 1000;">
+    </div>
+
+    <div class="scroll-container">
+        <img src="/static/img/Trikonasana.jpg" alt="Trikonasana">
+        <img src="/static/img/Warrior II pose.png" alt="Warrior II Pose">
+        <img src="/static/img/Tree pose.png" alt="Tree Pose">
+        <img src="/static/img/T pose.png" alt="T Pose">
+        <img src="/static/img/Bhujangasana.png" alt="Bhujangasana">
+        <img src="/static/img/Chakrasana.png" alt="Chakrasana">
+        <img src="/static/img/Balasana.png" alt="Balasana">
+        <img src="/static/img/Naukasana.png" alt="Naukasana">
+        <img src="/static/img/Sukhasana.png" alt="Sukhasana">
+        <img src="/static/img/Shavasana.png" alt="Shavasana">
+    </div>
+
+</body>
+
+</html>
