@@ -46,24 +46,24 @@ YogAI currently supports detection of the following asanas:
 
 ## 🚀 Getting Started
 
-# 1. Clone the Repository
+## 1. Clone the Repository
 git clone https://github.com/avirajdongare/YogAI.git
 cd YogAI
 
-# 2. Create and Activate a Virtual Environment
+## 2. Create and Activate a Virtual Environment
 python3 -m venv venv
 source venv/bin/activate  # For macOS/Linux
-# OR
+## OR
 venv\Scripts\activate     # For Windows
 
-# 3. Install Dependencies
+## 3. Install Dependencies
 pip install -r requirements.txt
 
-# 4. Run the Flask App
+## 4. Run the Flask App
 python app.py
 
-# Then open in your browser:
-# http://127.0.0.1:5000/yoga_try
+## Then open in your browser:
+## http://127.0.0.1:5000/yoga_try
 
 
 ---
