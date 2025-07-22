@@ -87,16 +87,6 @@ http://127.0.0.1:5000/yoga_try
 
 ---
 
-## 📌 TODO / Improvements-
-
-- Add pose accuracy scores
-- Log detected poses with timestamps to CSV
-- Overlay reference skeleton beside live stream
-- Add audio guidance or feedback
-- Deploy on the cloud (Render, Streamlit, Heroku)
-
----
-
 ## 🧑‍💻 Author
 
 **Aviraj Dongare**  
