@@ -44,3 +44,60 @@ YogAI currently supports detection of the following asanas:
 
 ---
 
+## 🚀 Getting Started
+
+# 1. Clone the Repository
+git clone https://github.com/avirajdongare/YogAI.git
+cd YogAI
+
+# 2. Create and Activate a Virtual Environment
+python3 -m venv venv
+source venv/bin/activate  # For macOS/Linux
+# OR
+venv\Scripts\activate     # For Windows
+
+# 3. Install Dependencies
+pip install -r requirements.txt
+
+# 4. Run the Flask App
+python app.py
+
+# Then open in your browser:
+# http://127.0.0.1:5000/yoga_try
+
+
+---
+
+##  How It Works-
+
+1. Flask serves a web interface with a live webcam feed.
+2. OpenCV captures frames from your webcam.
+3. MediaPipe detects 33 pose landmarks per frame.
+4. Angles between joints are calculated using basic trigonometry.
+5. If the angles match a known pose pattern → label is drawn on the frame.
+
+---
+
+## 📌 TODO / Improvements-
+
+- Add pose accuracy scores
+- Log detected poses with timestamps to CSV
+- Overlay reference skeleton beside live stream
+- Add audio guidance or feedback
+- Deploy on the cloud (Render, Streamlit, Heroku)
+
+---
+
+## 🧑‍💻 Author
+
+**Aviraj Dongare**  
+[GitHub](https://github.com/avirajdongare) 
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
