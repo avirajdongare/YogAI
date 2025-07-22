@@ -22,7 +22,6 @@
 - **OpenCV** — video capture and image processing
 - **MediaPipe** — body pose landmark detection
 - **HTML/CSS** — frontend layout and styling
-- **Matplotlib** (optional) — image rendering during debugging
 
 ---
 
